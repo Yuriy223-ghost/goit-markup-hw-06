@@ -55,7 +55,7 @@
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn btn" type="button" data-modal-open >Order Service</button>
+          <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Sectoin1 -->
@@ -453,16 +453,71 @@
             </li>
           </ul>
         </div>
+        <div class="footer-right">
+          <strong class="form-title">Subscribe</strong>
+          <form class="form-subscribe">
+            <label class="form-subscribe-field">
+              <input class="form-subscribe-input" type="email" placeholder=" " />
+              <span class="form-subscribe-badge">E-mail</span>
+            </label>
+            <button class="form-subscribe-btn"
+              >Subscribe
+              <svg class="form-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="14" height="14">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+        <form class="modal-form">
+          <label class="modal-form-wrapper">
+            Name
+            <input class="modal-form-iput" type="text" name="user_name" />
+            <svg class="modal-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form-wrapper">
+            Phone
+            <input class="modal-form-iput" type="tel" name="user_phone" />
+            <svg class="modal-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form-wrapper">
+            Email
+            <input class="modal-form-iput" type="email" name="user_email" />
+            <svg class="modal-form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form-wrapper">
+            Comment
+            <textarea class="modal-form-textarea" name="user_comment" rows="6" placeholder="Text input"></textarea>
+          </label>
+          <label class="modal-form-agreemet">
+            <input class="modal-form-checkbox" type="checkbox" name="user_agreemet" />
+            <svg class="modal-form-custom-checkbox" width="16" height="16">
+              <use class="check" href="./images/icons.svg#icon-check"></use>
+              <use class="uncheck" href="./images/icons.svg#icon-uncheck"></use>
+            </svg>
+            <span class="modal-form-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </span>
+          </label>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
