@@ -677,7 +677,7 @@ img {
   position: absolute;
   top: 50%;
   left: 19px;
-  transform: translateY(-15%);
+  transform: translateY(-5%);
   pointer-events: none;
   fill: var(--color-grey);
   transition: fill var(--transition);
@@ -721,17 +721,24 @@ img {
 }
 .modal-form-custom-checkbox {
 }
-.check {
-  fill: transparent;
-}
 
 .uncheck {
-  opacity: 0;
+  opacity: 1;
+  stroke: #000;
+  transition: var(--transition);
 }
 .modal-form-checkbox:checked + .modal-form-custom-checkbox > .uncheck{
-opacity: 1;
-transition: var(--transition);
+  opacity: 0;
 }
+.check {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox > .check{
+  opacity: 1;
+}
+
 .modal-form-desc {
   color: var(--color-argeemet);
   font-size: 12px;
@@ -752,9 +759,3 @@ transition: var(--transition);
   color: var(--color-white);
   border: none;
 }
-/* .modal-form-btn:disabled {
-  filter: grayscale(1);
-  background-color: transparent;
-  color: inherit;
-  cursor: not-allowed;
-} */
